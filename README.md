@@ -5,43 +5,43 @@
 
 # How  It Works
 <p>The application follows these steps to provide responses to your questions:</p>
+1. **PDF Loading:** The app reads multiple PDF documents and extracts their text content.
+2. **Text Chunking:** The extracted text is divided into smaller chunks that can be processed effectively.
+3. **Language Model:** The application utilizes a language model to generate vector representations (embeddings) of the text chunks.
+4. **Similarity Matching:** When you ask a question, the app compares it with the text chunks and identifies the most semantically similar ones.
+5. **Response Generation:** The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
 
-    <ol>
-        <li><strong>PDF Loading:</strong> The app reads multiple PDF documents and extracts their text content.</li>
-        <li><strong>Text Chunking:</strong> The extracted text is divided into smaller chunks that can be processed effectively.</li>
-        <li><strong>Language Model:</strong> The application utilizes a language model to generate vector representations (embeddings) of the text chunks.</li>
-        <li><strong>Similarity Matching:</strong> When you ask a question, the app compares it with the text chunks and identifies the most semantically similar ones.</li>
-        <li><strong>Response Generation:</strong> The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.</li>
-    </ol>
 # Dependencies and Installation
  <p>To install the MultiPDF Chat App, please follow these steps:</p>
+   1. **Clone the repository to your local machine.**
 
-    <ol>
-        <li>Clone the repository to your local machine.</li>
-        <li>Install the required dependencies by running the following command:</li>
-    </ol>
+2. **Install the required dependencies by running the following command:**
 
-    <pre><code>pip install -r requirements.txt</code></pre>
+    ```
+    pip install -r requirements.txt
+    ```
 
-    <ol start="3">
-        <li>Obtain an API key from OpenAI and add it to the <code>.env</code> file in the project directory.</li>
-    </ol>
+3. **Obtain an API key from OpenAI and add it to the `.env` file in the project directory.**
 
-    <pre><code>OPENAI_API_KEY=your_secret_api_key</code></pre>
+    ```shell
+    OPENAI_API_KEY=your_secret_api_key
+    ```
 
-    <h3>Usage</h3>
+## Usage
 
-    <p>To use the MultiPDF Chat App, follow these steps:</p>
+To use the MultiPDF Chat App, follow these steps:
 
-    <ol>
-        <li>Ensure that you have installed the required dependencies and added the OpenAI API key to the <code>.env</code> file.</li>
-        <li>Run the <code>main.py</code> file using the Streamlit CLI. Execute the following command:</li>
-    </ol>
+1. **Ensure that you have installed the required dependencies and added the OpenAI API key to the `.env` file.**
 
-    <pre><code>streamlit run app.py</code></pre>
+2. **Run the `main.py` file using the Streamlit CLI. Execute the following command:**
 
-    <ol start="3">
-        <li>The application will launch in your default web browser, displaying the user interface.</li>
-        <li>Load multiple PDF documents into the app by following the provided instructions.</li>
-        <li>Ask questions in natural language about the loaded PDFs using the chat interface.</li>
-    </ol>
+    ```
+    streamlit run app.py
+    ```
+
+3. **The application will launch in your default web browser, displaying the user interface.**
+
+4. **Load multiple PDF documents into the app by following the provided instructions.**
+
+5. **Ask questions in natural language about the loaded PDFs using the chat interface.**
+
